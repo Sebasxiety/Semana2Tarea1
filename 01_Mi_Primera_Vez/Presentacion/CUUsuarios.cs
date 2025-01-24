@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _01_Mi_Primera_Vez.Logica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +15,7 @@ namespace _01_Mi_Primera_Vez.Presentacion
     {
         public CUUsuarios()
         {
-            InitializeComponent();
+            InitializeComponent(); CargarUsuarios();
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -53,6 +54,17 @@ namespace _01_Mi_Primera_Vez.Presentacion
         }
 
         private void dgvDatosUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        private void CargarUsuarios()
+        {
+            cls_usuarios usuarioController = new cls_usuarios();
+            DataTable usuarios = usuarioController.GetUsuarios();
+            dgvDatosUsuarios.DataSource = usuarios;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
