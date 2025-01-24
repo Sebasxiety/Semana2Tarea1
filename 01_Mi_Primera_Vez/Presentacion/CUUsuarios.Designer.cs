@@ -52,6 +52,8 @@
             this.dgvDatosUsuarios.RowTemplate.Height = 24;
             this.dgvDatosUsuarios.Size = new System.Drawing.Size(781, 294);
             this.dgvDatosUsuarios.TabIndex = 1;
+            this.dgvDatosUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatosUsuarios_CellContentClick);
+            this.dgvDatosUsuarios.DoubleClick += new System.EventHandler(this.dgvDatosUsuarios_DoubleClick);
             // 
             // panel1
             // 

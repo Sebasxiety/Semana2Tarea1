@@ -69,6 +69,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(594, 467);
             this.panel1.TabIndex = 3;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button2
             // 
@@ -79,6 +80,7 @@
             this.button2.TabIndex = 14;
             this.button2.Text = "Guardar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -233,19 +235,19 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cmbPais;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtCodigoPostal;
-        private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.TextBox txtNombres;
-        private System.Windows.Forms.TextBox txtCedula;
         private System.Windows.Forms.Label lblFrmPersonal;
-        private System.Windows.Forms.DateTimePicker dtpFechaNacimiento;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.ComboBox cmbPais;
+        public System.Windows.Forms.TextBox txtCodigoPostal;
+        public System.Windows.Forms.TextBox txtDireccion;
+        public System.Windows.Forms.TextBox txtNombres;
+        public System.Windows.Forms.TextBox txtCedula;
+        public System.Windows.Forms.DateTimePicker dtpFechaNacimiento;
     }
 }
